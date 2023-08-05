@@ -1,0 +1,75 @@
+/* Text colors */
+.text-primary {
+   color: var(--primary-color);
+}
+
+.text-secondary {
+   color: var(--secondary-color);
+}
+
+.btn {
+   display: block;
+   margin-top: 1rem;
+   padding: 0.7rem 2rem;
+   background: var(--dark-color);
+   color: #fff;
+   border-radius: 5px;
+   transition: all 1s ease;
+}
+
+.btn:hover {
+   opacity: 0.8;
+}
+
+.btn-primary, 
+.bg-primary {
+   background: var(--primary-color);
+   color: #fff;
+}
+.btn-secondary, 
+.bg-secondary {
+   background: var(--secondary-color);
+   color: #fff;
+}
+.btn-light, 
+.bg-light {
+   background: var(--light-color);
+   color: #333;
+}
+
+.btn-outline-light {
+   background: none;
+   border: 1px solid #fff;
+}
+
+.btn-outline-dark {
+   background: none;
+   color: #333;
+   border: 1px solid #333;
+}
+
+.container {
+   max-width: 1100px;
+   margin: auto;
+}
+
+/* Border */
+.border-right {
+   border-right: 8px solid var(--primary-color);
+}
+
+.border-left {
+   border-left: 8px solid var(--primary-color);
+}
+
+.card {
+   padding: 1rem;
+   background: #fff;
+}
+
+.align {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}

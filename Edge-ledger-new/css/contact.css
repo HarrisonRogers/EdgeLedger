@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+   --primary-color: #28a745;
+   --secondary-color: #0284d0;
+   --light-color: #f4f4f4;
+   --dark-color: #333;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   background: #f4f4f4;
+   color: #333;
+   line-height: 1.6;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   color: #333;
+   text-decoration: none;
+}
+
+h1,
+h2 {
+   font-weight: 300;
+   line-height: 1.2;
+}
+
+p {
+   margin: 10px 0;
+}
+
+img {
+   width: 100%;
+}
+
+/* Navbar */
+.navbar {
+   height: 80px;
+   width: 100%;
+   background: transparent;
+   color: #fff;
+   position: fixed;
+   top: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   transition: background 1s ease;
+}
+
+.navbar-scrolled {
+   background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar .logo {
+   margin-left: 1.5rem;
+   font-weight: 400;
+}
+
+.navbar nav ul {
+   display: flex;
+}
+
+.navbar nav ul li {
+   padding: 1rem;
+}
+
+.navbar nav ul li a {
+   color: #fff;
+   padding: 1rem;
+   border-bottom: 1px solid transparent;
+   transition: all 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+   border-bottom: 1px solid var(--primary-color);
+   opacity: 0.8;
+}
+
+/* Header */
+.hero {
+   background: url(/image_resources/cases/cases1.jpg) no-repeat center center/cover;
+   height: 70vh;
+   position: relative;
+}
+
+.hero .content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height: 100%;
+   color: #fff;
+}
+
+.hero .content h1 {
+   font-size: 60px;
+   margin-bottom: 1rem;
+}
+
+.hero .content p {
+   font-size: 20px;
+}
+
+.hero::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.6);
+}
+
+.hero * {
+   z-index: 10;
+}
+
+.hero .content a {
+   display: block;
+   color: #fff;
+   height: 15px;
+   width: 15px;
+   line-height: 15px;
+   transition: all 1s ease;
+}
+
+.hero .content a:hover {
+   height: 20px;
+   width: 20px;
+   line-height: 20px;
+}
+
+/* Main Contact Form */
+#main-contact {
+   padding: 3rem 1rem 2rem 1rem;
+}
+
+#main-contact .contact-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 1rem;
+}
+
+#main-contact .contact-info {
+   margin: 2rem 0;
+   font-size: 18px;
+}
+
+#main-contact .contact-info strong  {
+   font-weight: bolder;
+}
+
+#main-contact .contact-info p {
+   font-weight: 200;
+}
+
+#main-contact .contact-content {
+   margin-bottom: 2rem;
+}
+
+#main-contact .contact-content h1 {
+   font-size: 2.5rem;
+   padding-bottom: 0.5rem;
+}
+
+#main-contact .solutions-text {
+   display: grid;
+   grid-template-areas: 
+   'first last'
+   'email phone'
+   'text';
+}
+
+#main-contact .solutions-text .contact-text-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 0.5rem;
+}
+
+#main-contact .form label {
+   display: block;
+   font-size: 18px;
+   margin: 0.4rem 0;
+}
+
+#main-contact .form input {
+   padding: 0.8rem 0.4rem;
+   width: 90%;
+   border-radius: 5px;
+   border: none;
+}
+
+#main-contact .form textarea {
+   display: block;
+   font-family: 'Open Sans', sans-serif;
+   padding: 0.8rem 0.4rem;
+   width: 100%;
+   border: none;
+   border-radius: 5px;
+}
+
+#main-contact .solutions-text a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 1.5rem;
+}
+
+/* Footer */
+#main-footer {
+   height: 200px;
+   background: #333;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+#main-footer a {
+   color: #fff;
+   padding: 0 0.5rem;
+   transition: all 0.5s ease;
+}
+
+#main-footer a:hover {
+   color: var(--primary-color);
+}
