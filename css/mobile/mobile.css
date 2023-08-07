@@ -1,0 +1,90 @@
+@media(max-width: 768px) {
+   /* Index */
+   .navbar {
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 2rem;
+   }
+
+   .navbar nav ul li {
+      padding: 1rem 0;
+   }
+
+   #icons {
+      display: grid;
+      grid-template-columns: 1fr;
+      height: 100%;
+      margin: 2rem 0;
+   }
+
+   #icons .icon {
+      margin: 1rem 2rem;
+   }
+
+   #solutions {
+      grid-template-columns: 1fr;
+   }
+
+   .solutions-text {
+      font-size: smaller;
+   }
+
+   .solutions-text p {
+      font-size: larger;
+   }
+
+   #cases .cases-content p{
+      text-align: center;
+      padding: 0 2rem;
+   }
+
+   #cases .cases-img {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   #team .cases-content {
+      padding: 1rem 2rem;
+   }
+
+   #team .cases-content p {
+      font-size: larger;
+   }
+
+   #team .grid-team {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+   }
+
+   #contact {
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   #contact img {
+      display: none;
+      width: 0%;
+   }
+
+   #contact .solutions-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+   }
+
+   #contact input {
+      width: 100%;
+   }
+
+   #contact .solutions-text label {
+      font-size: larger;
+   }
+
+}
