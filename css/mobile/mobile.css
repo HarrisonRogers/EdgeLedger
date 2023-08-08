@@ -137,6 +137,31 @@
       text-align: center;
    }
 
+   /* Cases */
 
+   #cases-inner .cases-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+   #cases-inner .cases-grid > *:first-child {
+      grid-column: 1;
+      display: flex;
+      flex-direction: column;
+   }
 
+   #cases-inner .cases-grid > *:last-child {
+      grid-column: 1;
+      display: flex;
+      flex-direction: column;
+   }
+
+   #cases-inner .border-right {
+      border: none;
+      border-bottom: 8px solid var(--primary-color);
+   }
+
+   #cases-inner .border-left {
+      border: none;
+      border-top: 8px solid var(--primary-color);
+   }
 }
