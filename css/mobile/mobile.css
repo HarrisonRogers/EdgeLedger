@@ -14,6 +14,10 @@
       padding: 1rem 0;
    }
 
+   .hero .content p {
+      padding: 0 1.5rem;
+   }
+
    #icons {
       display: grid;
       grid-template-columns: 1fr;
@@ -88,6 +92,8 @@
    }
 
    /* About */
+   #about
+
    #about-content .content-grid {
       display: grid;
       grid-template-columns: 1fr;
