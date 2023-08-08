@@ -185,4 +185,36 @@
    #blog-post-inner .post h2 {
       font-size: 35px;
    }
+
+   /* Contact */
+   #main-contact .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+   }
+
+   #main-contact .contact-info:last-child {
+      padding-bottom: 2rem;
+      border-bottom: 3px dotted var(--dark-color);
+   }
+
+   #main-contact .solutions-text {
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   #main-contact .solutions-text .contact-text-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+   }
+
+   #main-contact .contact-content {
+      margin-bottom: 1rem;
+   }
+
+   #main-contact .form input, 
+   #main-contact .form textarea {
+      width: 90%;
+   }
 }
