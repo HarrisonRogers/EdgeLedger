@@ -164,4 +164,25 @@
       border: none;
       border-top: 8px solid var(--primary-color);
    }
+
+   /* Blog */
+   #blog-content .blog-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   #blog-content img {
+      display: none;
+   }
+
+   #blog-content .post:last-child {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      width: 100%;
+   }
+
+   /* Inner Blog Post */
+   #blog-post-inner .post h2 {
+      font-size: 35px;
+   }
 }
